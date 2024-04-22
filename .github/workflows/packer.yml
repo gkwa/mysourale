@@ -3,8 +3,6 @@ name: packer
   push:
     branches:
     - '**'
-env:
-  PRODUCT_VERSION: latest
 jobs:
   packer:
     runs-on: ubuntu-latest
