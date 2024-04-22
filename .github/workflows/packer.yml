@@ -3,10 +3,14 @@ name: packer
   push:
     branches:
     - '**'
+
+environment: 
+  name: myenv
+
+
 jobs:
   packer:
     runs-on: ubuntu-latest
-    environment: myenv
     name: Run Packer
     steps:
     - name: Checkout Repository
