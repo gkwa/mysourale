@@ -4,7 +4,6 @@ name: packer
     branches:
     - '**'
 
-
 jobs:
   packer:
     runs-on: ubuntu-latest
@@ -29,7 +28,3 @@ jobs:
     - name: Run `packer build`
       id: build
       run: packer build .
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-west-2  
