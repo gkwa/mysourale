@@ -8,7 +8,7 @@ env:
 jobs:
   packer:
     runs-on: ubuntu-latest
-    environment: production
+    environment: myenv
     name: Run Packer
     steps:
     - name: Checkout Repository
