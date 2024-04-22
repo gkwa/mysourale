@@ -26,3 +26,6 @@ jobs:
     - name: Run `packer validate`
       id: validate
       run: packer validate -syntax-only .
+    - name: Run `packer validate`
+      id: validate
+      run: packer build .
